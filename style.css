@@ -1,0 +1,135 @@
+#borderR {
+  border-radius: 50%;
+}
+
+#main {
+  max-width: 1100px;
+  font-size: large;
+
+}
+
+#my_name {
+  color: #f9d5b0;
+  font-size: x-large
+}
+
+#banner {
+  background-color: #63A088;
+  color: #FFFFFF;
+
+}
+
+.skills-icon {
+  color: #F39237;
+}
+
+a {
+  color: #56638A;
+}
+
+b {
+  color: #F39237;
+}
+
+/* bootstrap */
+.card-text{
+  font-size: medium;
+}
+
+/* timeline */
+.mt-70{
+  margin-top: 70px;
+}
+
+.mb-70{
+  margin-bottom: 70px;
+}
+.vertical-timeline {
+ width: 100%;
+ position: relative;
+ padding: 1.5rem 0 1rem;
+}
+
+.vertical-timeline::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 67px;
+ height: 100%;
+ width: 4px;
+ background: #e9ecef;
+ border-radius: .25rem;
+}
+
+.vertical-timeline-element {
+ position: relative;
+ margin: 0 0 1rem;
+}
+
+.vertical-timeline--animate .vertical-timeline-element-icon.bounce-in {
+ visibility: visible;
+ animation: cd-bounce-1 .8s;
+}
+.vertical-timeline-element-icon {
+ position: absolute;
+ top: 0;
+ left: 61px;
+}
+
+.vertical-timeline-element-icon .badge-dot-xl {
+ box-shadow: 0 0 0 5px #fff;
+}
+
+.badge-dot-xl {
+ width: 18px;
+ height: 18px;
+ position: relative;
+}
+.badge:empty {
+ display: none;
+}
+
+
+.badge-dot-xl::before {
+ content: '';
+ width: 10px;
+ height: 10px;
+ border-radius: .25rem;
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ margin: -5px 0 0 -5px;
+ background: #fff;
+}
+
+.vertical-timeline-element-content {
+ position: relative;
+ margin-left: 90px;
+ font-size: medium;
+}
+
+.vertical-timeline-element-content .timeline-title {
+ font-size: large;
+ text-transform: uppercase;
+ margin: 0 0 .5rem;
+ padding: 2px 0 0;
+ font-weight: bold;
+}
+
+.vertical-timeline-element-content .vertical-timeline-element-date {
+ display: block;
+ position: absolute;
+ left: -90px;
+ top: 0;
+ padding-right: 10px;
+ text-align: right;
+ color: #adb5bd;
+ font-size: small;
+ white-space: nowrap;
+}
+
+.vertical-timeline-element-content:after {
+ content: "";
+ display: table;
+ clear: both;
+}

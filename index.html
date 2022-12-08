@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tita's profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/0263e85d8d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!--------------------------------------------- Banner --------------------------------------------->
+    <div id="main" class="px-3 py-3 my-4 mx-5 mx-auto container text-start">
+      <div id="banner" class="container">
+        <div class="row justify-content-between">
+          <!-- 頭像 -->
+          <div class="col-12 col-md-5">
+            <br><br>
+            <img
+              id="borderR"
+              class="d-block mx-auto mb-4"
+              src="https://avatars.githubusercontent.com/u/71343865?v=4"
+              alt=""
+              width="150"
+              height="150"
+            />
+          </div>
+          <!-- 基本資訊 -->
+          <div class="col col-md-6">
+            <div id="my_name" class="row"><h3>劉宥廷（Tita Liu）</h3></div>
+            <div class="row">
+              <p><i class="fas fa-user fa-fw"></i> She / Her</p>
+            </div>
+            <div class="row">
+              <p><i class="fa-solid fa-cake-candles fa-fw"></i> 生日：2001/12/24</p>
+            </div>
+            <div class="row">
+              <p><i class="fa-solid fa-school fa-fw"></i> 就讀：元智大學 資訊工程學系</p>
+            </div>
+            <div class="row">
+              <p><i class="fa-solid fa-briefcase fa-fw"></i> 現任：GDSC YZU Core Team Member</p>
+            </div>
+            <!-- 連結 -->
+            <div class="row">
+              <p>
+                <a href="https://github.com/titaliu1224"><i class="fab fa-github fa-fw" style="font-size: 30px"></i></a>
+                <a href="https://www.linkedin.com/in/tita-liu-7a5057224/"><i class="fab fa-linkedin fa-fw" style="font-size: 30px"></i></a>
+                <a href="https://titaliu1224.github.io/"><i class="fa-solid fa-paperclip" style="font-size: 30px"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+
+      <!--------------------------------------------- About Me --------------------------------------------->
+
+      <div id="about_me">
+        <h2>About Me</h2>
+        <hr />
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <p>
+              我是就讀資工系的大三學生，喜歡創造和接觸新知識，開發軟體和參加社群能帶給我很大的成就感。喜歡實作大於死記硬背，參加比賽時會和朋友做專案做到深夜，團隊一起合作產出作品，並在其中學到專業知識讓我成長許多，在團隊中我時常傾聽他人意見並給出自己的建議，若缺少隊長領導，我會成為督促與推進進度的人。目前正在研究物件辨識和AIoT，課餘時間會閱讀一些書好讓我更了解其他領域專家的想法並將其寫成筆記，甚至發布至個人網站。
+            </p>
+          </div>
+        </div>
+      </div>
+      <br>
+      <!--------------------------------------------- Projects --------------------------------------------->
+
+      <div id="projects">
+        <h2>Projects</h2>
+        <hr/>
+        <div class="row justify-content-center">
+          <div class="col col-md-4">
+            <div class="card mx-auto" style="width: 18rem;" id="FooDo">
+              <img src="https://raw.githubusercontent.com/gdscyzu/Web-Interface/main/image/img.png" class="card-img-top d-block mx-auto" alt="FooDo image" style="max-height: 200px; width:auto">
+              <div class="card-body">
+                <h5 class="card-title">FooDo</h5>
+                <p class="card-text">
+                  線上食物銀行，解決捐贈食物容易過期的問題。（未正式上線）<br>
+                  我使用 Firebase Realtime Database 儲存使用者與餐點的資料，使用 Firebase Hosting 運行網站，利用 Git, GitHub 與組員協作。
+                </p>
+                <a href="https://solution-challenge-945f3.web.app/" class="btn btn-warning">Demo</a>
+                <a href="https://www.youtube.com/watch?v=GgcO9AzH8rU&ab_channel=ShineLai" class="btn btn-outline-success">Video</a>
+                <a href="https://github.com/gdscyzu/FooDo" class="btn btn-outline-dark">Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mx-auto" style="width: 18rem;" id="gdsc_bot">
+              <img src=".\image\gdsc-bot.png" class="card-img-top d-block mx-auto" alt="gdsc bot image" style="max-height: 200px; width:auto">
+              <div class="card-body">
+                <h5 class="card-title">Discord Bot</h5>
+                <p class="card-text">
+                  負責處理 GDSC Discord server 的各種問題，如認領身分組、洗版防治、批量刪除訊息等。<br>
+                  使用 Discord.py (Python) 撰寫。
+                  <br><br><br>
+                </p>
+                <a href="https://discord.gg/smCR5qpAEY" class="btn btn-warning">Discord</a>
+                <a href="https://replit.com/@ttttita/GDSC-bot#main.py" class="btn btn-outline-dark">Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mx-auto" style="width: 18rem;" id="blog">
+              <img src=".\image\blog.png" class="card-img-top d-block mx-auto" alt="escape game image" style="max-height: 200px; width:auto">
+              <div class="card-body">
+                <h5 class="card-title">技術分享 Blog</h5>
+                <p class="card-text">
+                  將學習到的知識寫成文章記錄與分享。<br>
+                  利用 Jekyll 渲染一個靜態的部落格網頁，透過更動 Sass 檔案修改顯示效果，透過 Ruby 新增想要的功能。
+                  <br>
+                </p>
+                <a href="https://titaliu1224.github.io/" class="btn btn-warning">Demo</a>
+                <a href="https://github.com/titaliu1224/titaliu1224.github.io" class="btn btn-outline-dark">Code</a>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-md-4">
+            <div class="card" style="width: 18rem;" id="escape">
+              <img src=".\image\escape.png" class="card-img-top d-block mx-auto" alt="escape game image" style="max-height: 200px; width:auto">
+              <div class="card-body">
+                <h5 class="card-title">文字型密室逃脫</h5>
+                <p class="card-text">
+                  點擊文字來收集道具以逃出神秘房間，並揭開故事的真相！<br>
+                  Ink + HTML 寫的純文字密室逃脫。
+                  <br><br><br><br>
+                </p>
+                <a href="https://titaliu1224.github.io/escape-game/" class="btn btn-warning">Demo</a>
+                <a href="https://github.com/titaliu1224/escape-game" class="btn btn-outline-dark">Code</a>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <br>
+
+      <!--------------------------------------------- Skills --------------------------------------------->
+      <div id="skills">
+        <h2>Skills</h2>
+        <hr>
+        <div class="row justify-content-center">
+          <div class="col-md-11">
+            <!-- <ul class="list-group list-group-flush"> -->
+            <h3><i class="fas fa-keyboard skills-icon" style="font-size: 30px;"></i> Python</h3>
+              <p> 使用 Python 撰寫 Discord bot, Line bot 等聊天機器人、樹莓派的 AIoT 相關專案，並有撰寫手機 APP 自動化腳本之經驗。 </p>
+
+            <h3><i class="fas fa-keyboard skills-icon" style="font-size: 30px;"></i> C++</h3>
+            <p> 使用 C++ 練習演算法、LeetCode 等理論問題。 </p>
+
+            <h3><i class="fas fa-keyboard skills-icon" style="font-size: 30px;"></i> Java</h3>
+            <p> 使用 AWT, Swing 寫出 GUI 介面與 2048 小遊戲。 </p>
+          </div>
+        </div>  
+      </div>
+
+      <!--------------------------------------------- Experience --------------------------------------------->
+      <!-- code from: https://bbbootstrap.com/snippets/user-business-timeline-32289439 -->
+      <div id="experience">
+        <h2>Experience</h2>
+        <hr />
+        <div clas="container">
+          <!-- 分左右兩欄長度不平衡，先換過來 -->
+          <!-- <div class="row justify-content-around"> -->
+            <div id="work_experience" class="col-md-6">
+              <div class="mb-3 row">
+                <h5>實習經驗</h5>
+                <div class="vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
+                  <div class="vertical-timeline-item vertical-timeline-element">
+                    <div>
+                      <span class="vertical-timeline-element-icon bounce-in">
+                        <i class="fa-solid fa-circle-dot" style="color:#F39237"></i>
+                      </span>
+                      <div class="vertical-timeline-element-content bounce-in">
+                        <h4 class="timeline-title">QA 測試工程師</h4>
+                        <p>
+                          王牌數位
+                        </p>
+                          <ul>
+                            <li>確認後端工程師依照需求提供正確運作的 API</li>
+                            <li>確認前端工程師依照需求修改、新增的功能可以正常運作</li>
+                            <li>測試網站和APP是否有Bug</li>
+                            <li>利用 Python 撰寫自動化測試腳本</li>
+                          </ul>
+                        <span class="vertical-timeline-element-date">2021/7 <br> ~ 2021/8</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="club_experience" class="col-md-6">
+              <div class="mb-3 row">
+                <h5>社群／社團經驗</h5>
+                <div class="vertical-timeline vertical-timeline--animate vertical-timeline--one-column">
+                  <div class="vertical-timeline-item vertical-timeline-element">
+                    <div>
+                      <span class="vertical-timeline-element-icon bounce-in">
+                        <i class="fa-solid fa-circle-dot" style="color:#F39237"></i>
+                      </span>
+                      <div class="vertical-timeline-element-content bounce-in">
+                        <h4 class="timeline-title">
+                          Google Developer Student Clubs <b>Lead</b>
+                        </h4>
+                          <p>
+                            Yuan Ze University
+                          </p>
+                          <ul>
+                            <li>校園中的第一屆 GDSC 社團</li>
+                            <li>組建 core team 在校園中教導軟體技術、邀請業界講者回來經驗分享</li>
+                            <li>分享社群與開源精神</li>
+                          </ul> 
+                        <span class="vertical-timeline-element-date">2021/8 <br> ~ 2022/7</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="vertical-timeline-item vertical-timeline-element">
+                    <div>
+                      <span class="vertical-timeline-element-icon bounce-in">
+                        <i class="fa-solid fa-circle-dot" style="color:#F39237"></i>
+                      </span>
+                      <div class="vertical-timeline-element-content bounce-in">
+                        <h4 class="timeline-title">DevFest Taipei'21 講者與工作人員</h4>
+                        <p>
+                          Google Developer Groups Taipei & Taoyuan
+                        </p>
+                        <ul>
+                          <li>分享第一次經營社群的困難與趣事</li>
+                          <li>控管 StreamYard 直播後台</li>
+                        </ul>
+                        <span class="vertical-timeline-element-date">2022/11</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="vertical-timeline-item vertical-timeline-element">
+                    <div>
+                      <span class="vertical-timeline-element-icon bounce-in">
+                        <i class="fa-solid fa-circle-dot" style="color: #F39237"></i>
+                      </span>
+                      <div class="vertical-timeline-element-content bounce-in">
+                        <h4 class="timeline-title">Google Developer Student Clubs <b>Core Team</b></h4>
+                        <p>
+                          Yuan Ze University
+                        </p>
+                        <p>
+                          聯絡講者、解答社員在課堂上的問題、開會研討活動流程
+                        </p>
+                        <span class="vertical-timeline-element-date">2022/8 <br> ~ Now</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <!-- </div> -->
+        </div>
+     </div>
+    </div>
+  </body>
+</html>
